@@ -8,8 +8,6 @@ The `GradientLetter` class uses the `geomerative` to get all the anchor points o
   <code>      for (int x=0; x < img.width; x++) {</code><br>
   <code>        int index = x + y * img.width;</code><br>
    <code>       float sum = 0;</code><br>
-    <code>      //each point of the glyph is turned into a small radial gradient</code> <br>
-  <code>        //that sums up with the neighbouring point/radial gradients</code><br>
  <code>         for (int i=0; i<points.length; i++) {</code><br>
   <code>          float d = dist(x, y, img.width * 0.4 + points[i].x, img.height * 0.7 + points[i].y);</code><br>
  <code>           if(d < 5)sum += 5 * r / pow(d, 2);</code><br>
