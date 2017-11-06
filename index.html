@@ -18,6 +18,11 @@
 		font-family: ditherFont;
 		src: url(data/DitherFont_001/bin/DitherFont_001.woff);
 	}
+	@font-face{
+
+		font-family: mono;
+		src: url(data/SourceCodePro-Bold.otf.woff);
+	}
 	div{
 		font-family: ditherFont;
 	}
@@ -27,14 +32,19 @@
 	canvas {
 		margin:auto;
 	}	
+	code{
+		font-family: mono;
+		color: #000;
+		background: #bbb;
+	}
 	/*class description*/
 	.description{
 		overflow-y: scroll;
 		position: absolute;
 		left: 50%;
 		top: 1px;
-		width: 50%;
-		height: 100%;
+		width: 48%;
+		height: 98%;
 		background: #fff;
 		color: #000;
 		font-family: Helvetica;
@@ -65,15 +75,16 @@
 	<div class="ditherTxt">my amazing dither font</div>
 	<div class="description">
 		<h1>HELLO DITHER FONT</h1>
-		<img src="https://user-images.githubusercontent.com/17408277/32441002-dcba07ba-c2f5-11e7-85a9-105228cfc045.png" width="100%" height="auto" ><br>
-		A <a href="https://processing.org">processing</a> tool to develop dithered fonts, based on <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>.
+		<img src="https://user-images.githubusercontent.com/17408277/32441002-dcba07ba-c2f5-11e7-85a9-105228cfc045.png" width="100%" height="auto"><br>
+		A <a href="https://processing.org">processing</a> tool to develop dithered fonts, based on <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>.<br><br>
+		<h3>DOWNLOAD/FORK/PUSH/COMMENTS <a href="https://github.com/Yyyyaaaannnnoooo/DitherFont_v_01">HERE</a></h3>
 		<h2>How it works</h2>
 		The application relies on two classes: <code>GradientLetter</code> and <code>Dither</code>.
-		The <code>GradientLetter</code> class uses the geomerative to get all the anchor points of a single character. Those points are than used as center for a radial gradient, and it generates such letterforms<br>
-		<img src="https://user-images.githubusercontent.com/17408277/32440985-c9deedea-c2f5-11e7-8b42-9c686258f337.png"><br>
+		The <code>GradientLetter</code> class uses geomerative to get all the anchor points of a single character. Those points are than used as center for a radial gradient, and it generates such letterforms<br>
+		<img src="https://user-images.githubusercontent.com/17408277/32440985-c9deedea-c2f5-11e7-8b42-9c686258f337.png" width="30%" height="auto"><br>
 		This image is than loaded in the <code>Dither</code> class that outputs a dithered letterform, like this:
 		<br>
-		<img src="https://user-images.githubusercontent.com/17408277/32441258-1897921a-c2f7-11e7-9836-0f06eb04580b.png"><br>
+		<img src="https://user-images.githubusercontent.com/17408277/32441258-1897921a-c2f7-11e7-9836-0f06eb04580b.png" width="30%" height="auto"><br>
 		the menu on the left side lets you scramble with the dither.<br>
 		You can change how the four neighbouring pixels are recalculated, by changing the values in the four boxes. The bar at the bottom calculates by which amount the previous changed values need to be divided by.
 		<h2>References</h2>
@@ -84,6 +95,7 @@
 		<h2>Dependencies</h2>
 		<li><a href="http://www.ricardmarxer.com/geomerative/">Geomerative</a></li>
 		<li><a href="http://code.andreaskoller.com/libraries/fontastic/">Fontastic</a></li>
-		<li><a href="http://www.sojamo.de/libraries/controlP5/">Controlp5</a></li></div>
+		<li><a href="http://www.sojamo.de/libraries/controlP5/">Controlp5</a></li>
+		<h2>DOWNLOAD/FORK/PUSH/COMMENTS <a href="https://github.com/Yyyyaaaannnnoooo/DitherFont_v_01">HERE</a></h2></div>
 	</body>
 	</html>
