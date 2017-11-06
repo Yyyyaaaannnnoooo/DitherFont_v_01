@@ -10,7 +10,7 @@ This image is than loaded in the <code>Dither</code> class that outputs a dither
 the menu on the left side lets you scramble with the dither.<br>
 You can change how the four neighbouring pixels are recalculated, by changing the values in the four boxes. The bar at the bottom calculates by which amount the previous changed values need to be divided by.
 <h2>References</h2>
-<li><a href="https://en.wikipedia.org/wiki/Dither"></a>Dither @Wikipedia</li>
+<li><a href="https://en.wikipedia.org/wiki/Dither">Dither</a> @Wikipedia</li>
 <li><a href="http://www.efg2.com/Lab/Library/ImageProcessing/DHALF.TXT">DITHER.TXT</a> by Lee Daniel Crooker. An interesting text about dithering and halftoning algorithms</li>
 <li><a href="http://cv.ulichney.com/papers/1993-void-cluster.pdf">The Void-and-Cluster Method for Dither Array Generation</a> a paper about dither by Robert Ulichney</li>
 <li><a href="http://danieltemkin.com/DitherStudies/About">Dither Studies</a> by Daniel Temkin. And his <a href="http://danieltemkin.com/DitherStudies/">Dither Web App</a></li>
