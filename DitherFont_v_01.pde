@@ -20,7 +20,7 @@ char[] unicode;
 boolean init = false;
 float fac = 0, pix1 = 0, pix2 = 0, pix3 = 0, pix4 = 0, prev1 = 0, prev2 = 0, prev3 = 0, prev4 = 0;
 void setup() {
-  size(1000, 580);//needs to be revised
+  size(1100, 580);//needs to be revised
   unicodeString = loadStrings("unicode.txt");
   println(unicodeString.length);
   unicode = new char[unicodeString.length];
