@@ -34,8 +34,8 @@
 	}	
 	code{
 		font-family: mono;
-		color: #000;
-		background: #bbb;
+		color: #fff;
+		background: #000;
 	}
 	/*class description*/
 	.description{
@@ -47,8 +47,8 @@
 		height:80%;
 		background: #fff;
 		color: #000;
-		font-family: Helvetica;
-		font-weight: bolder;
+		font-family: mono;
+		font-weight: lighter;
 		font-size: 20px;
 		border: solid 3px #000;
 		z-index: 1;
@@ -108,17 +108,19 @@
 	<div class="speech" id="myspeech">SPEAK LOUD</div>
 	<div class="description">
 		<img src="https://user-images.githubusercontent.com/17408277/32441002-dcba07ba-c2f5-11e7-85a9-105228cfc045.png" width="100%" height="auto"><br>
-		A <a href="https://processing.org">processing</a> tool to develop dithered fonts, based on <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>.<br><br>
-		<h3>DOWNLOAD/FORK/PUSH/COMMENTS <a href="https://github.com/Yyyyaaaannnnoooo/DitherFont_v_01">HERE</a></h3>
+		A <a href="https://processing.org">processing</a> tool to develop dithered fonts.<br><br>
+		<h3>DOWNLOAD or FORK <a href="https://github.com/Yyyyaaaannnnoooo/DitherFont_v_01">HERE</a></h3>
 		<h2>How it works</h2>
 		The application relies on two classes: <code>GradientLetter</code> and <code>Dither</code>.
-		The <code>GradientLetter</code> class uses geomerative to get all the anchor points of a single character. Those points are than used as center for a radial gradient, and it generates such letterforms<br>
+		The <code>GradientLetter</code> class uses geomerative to get all the anchor points of a single character. Those points are translated to a <code>PImage</code> as the location for a radial gradient. At the end of the process this class outputs the following letterform<br>
 		<img src="https://user-images.githubusercontent.com/17408277/32440985-c9deedea-c2f5-11e7-8b42-9c686258f337.png" width="30%" height="auto"><br>
 		This image is than loaded in the <code>Dither</code> class that outputs a dithered letterform, like this:
 		<br>
 		<img src="https://user-images.githubusercontent.com/17408277/32441258-1897921a-c2f7-11e7-9836-0f06eb04580b.png" width="30%" height="auto"><br>
 		the menu on the left side lets you scramble with the dither.<br>
-		You can change how the four neighbouring pixels are recalculated, by changing the values in the four boxes. The bar at the bottom calculates by which amount the previous changed values need to be divided by.
+		You can change how the four neighbouring pixels are recalculated, by changing the values in the four boxes. The bar at the bottom calculates by which amount the previous changed values need to be divided by.<br>
+		Hit the space bar to let the app build the font.<br>
+		Inside the <code>data</code> folder there is a text file, named unicode.txt, containing the first 224 Unicode characters. It is possible to expand it also to greek cyrillic etc. <a href="https://unicode-table.com/en/tools/generator/">here</a> you can find a nice unicode table generator.
 		<h2>References</h2>
 		<li><a href="https://en.wikipedia.org/wiki/Dither">Dither</a> @Wikipedia</li>
 		<li><a href="http://www.efg2.com/Lab/Library/ImageProcessing/DHALF.TXT">DITHER.TXT</a> by Lee Daniel Crooker. An interesting text about dithering and halftoning algorithms</li>
@@ -128,6 +130,6 @@
 		<li><a href="http://www.ricardmarxer.com/geomerative/">Geomerative</a></li>
 		<li><a href="http://code.andreaskoller.com/libraries/fontastic/">Fontastic</a></li>
 		<li><a href="http://www.sojamo.de/libraries/controlP5/">Controlp5</a></li>
-		<h2>DOWNLOAD/FORK/PUSH/COMMENTS <a href="https://github.com/Yyyyaaaannnnoooo/DitherFont_v_01">HERE</a></h2></div>
+		<li>The font used is <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a></li>
 	</body>
 	</html>
