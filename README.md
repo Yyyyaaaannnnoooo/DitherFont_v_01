@@ -4,18 +4,6 @@ A <a href="https://processing.org">processing</a> tool to develop dithered fonts
 The application relies on two classes: `GradientLetter` and `Dither`.
 The `GradientLetter` class uses the `geomerative` to get all the anchor points of a single character. Those points are than used as center for a radial gradient:<br>
 <code>PImage gradientletter() {</code><br>
-  <code>  RG.setPolygonizer(RG.ADAPTATIVE);</code><br>
-  <code>  //grp.draw();</code><br>
-  <code>  RG.setPolygonizer(RG.UNIFORMLENGTH);</code><br>
-  <code>  float numberOfPoints = 1;// map(mouseX, 0, width, 1, 200);</code><br>
-  <code>  RG.setPolygonizerLength(numberOfPoints);</code><br>
-  <code>  points = grp.getPoints();</code><br>
-<code>	// If there are any points</code><br>
- <code>   if (points != null) { </code><br>
- <code>     //here we turn the a char into a gradient</code><br>
- <code>     img.loadPixels();</code><br>
- <code>     fill(0);</code><br>
-   <code>   stroke(0);</code><br>
    <code>   for (int y = 0; y < img.height; y++) {</code><br>
   <code>      for (int x=0; x < img.width; x++) {</code><br>
   <code>        int index = x + y * img.width;</code><br>
