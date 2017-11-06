@@ -54,11 +54,42 @@
 		z-index: 1;
 		padding: 5px 5px 3px 5px;
 	}
+	.useChrome{
+		overflow-y: scroll;
+		position: absolute;
+		left: 0%;
+		top: 250px;
+		width: 50%;
+		height: 25px;
+		background: #fff;
+		color: #000;
+		font-family: Helvetica;
+		font-weight: bolder;
+		font-size: 15px;
+		border: solid 3px #000;
+		z-index: 1;
+		padding: 5px 5px 3px 5px;
+	}
 	/*class description*/
 	.ditherTxt{
+		overflow-y: scroll;
 		position: absolute;
 		left: 0px;
 		top: 1px;
+		width: 50%;
+		height: 250px;
+		background: #fff;
+		color: #000;
+		font-family: ditherFont;
+		font-size: 100px;
+		border: solid 3px #000;
+		z-index: 1;
+		padding: 5px 5px 3px 5px;
+	}
+	.speech{
+		position: absolute;
+		left: 0px;
+		top: 285px;
 		width: 50%;
 		height: auto;
 		background: #fff;
@@ -73,6 +104,8 @@
 </head>
 <body>
 	<div class="ditherTxt">my amazing dither font</div>
+	<div class="useChrome" >USE CHROME AS BROWSER TO WRITE WITH THE SPEECH RECOGNITION API</div>
+	<div class="speech" id="myspeech">SPEAK LOUD</div>
 	<div class="description">
 		<h1>HELLO DITHER FONT</h1>
 		<img src="https://user-images.githubusercontent.com/17408277/32441002-dcba07ba-c2f5-11e7-85a9-105228cfc045.png" width="100%" height="auto"><br>
